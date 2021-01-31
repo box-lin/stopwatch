@@ -1,0 +1,255 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2972
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1024.387 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLKdiv' [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/CLKdiv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLKdiv' (1#1) [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/CLKdiv.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/Controller.v:23]
+	Parameter S0 bound to: 2'b00 
+	Parameter S1 bound to: 2'b01 
+	Parameter S2 bound to: 2'b10 
+	Parameter S3 bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (2#1) [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/Controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DisplayController' [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/DisplayController.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BCD' [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/BCD.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'BCD' (3#1) [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/BCD.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Counter2bits' [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/DisplayController.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'Counter2bits' (4#1) [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/DisplayController.v:65]
+INFO: [Synth 8-6157] synthesizing module 'Mux4_1' [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/DisplayController.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4_1' (5#1) [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/DisplayController.v:45]
+INFO: [Synth 8-6157] synthesizing module 'Seg_decoder' [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/DisplayController.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'Seg_decoder' (6#1) [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/DisplayController.v:93]
+INFO: [Synth 8-6157] synthesizing module 'Decoder2_4' [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/DisplayController.v:76]
+INFO: [Synth 8-226] default block is never used [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/DisplayController.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder2_4' (7#1) [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/DisplayController.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'DisplayController' (8#1) [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/DisplayController.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (9#1) [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1024.387 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1024.387 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1024.387 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1024.387 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/constrs_1/new/p11r2.xdc]
+Finished Parsing XDC File [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/constrs_1/new/p11r2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.srcs/constrs_1/new/p11r2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1034.715 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1034.715 ; gain = 10.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1034.715 ; gain = 10.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1034.715 ; gain = 10.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'Controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                               00 |                              000
+                      S1 |                               01 |                              001
+                      S2 |                               10 |                              010
+                      S3 |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'sequential' in module 'Controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1034.715 ; gain = 10.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1034.715 ; gain = 10.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1034.715 ; gain = 10.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1034.715 ; gain = 10.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1042.164 ; gain = 17.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1047.918 ; gain = 23.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1047.918 ; gain = 23.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1047.918 ; gain = 23.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1047.918 ; gain = 23.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1047.918 ; gain = 23.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1047.918 ; gain = 23.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     5|
+|4     |LUT2   |     1|
+|5     |LUT3   |     9|
+|6     |LUT4   |    23|
+|7     |LUT5   |    21|
+|8     |LUT6   |     5|
+|9     |FDCE   |    35|
+|10    |FDRE   |     2|
+|11    |IBUF   |     5|
+|12    |OBUF   |    11|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1047.918 ; gain = 23.531
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 1047.918 ; gain = 13.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1047.918 ; gain = 23.531
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1047.918 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1056.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:21 . Memory (MB): peak = 1056.473 ; gain = 32.086
+INFO: [Common 17-1381] The checkpoint 'C:/Users/boxiang/Desktop/ee_214_projects/project_11_2/project_11_2.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 11 11:20:39 2020...

@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jan 31 15:49:17 2021
+# Process ID: 11316
+# Current directory: C:/Users/boxiang/Desktop/E-File the master/A2 - TwoFiles/A4 - Boxiang Lin's WSU school fikes/2020 fall/ee214/ee_214_projects/project_11_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3452 C:\Users\boxiang\Desktop\E-File the master\A2 - TwoFiles\A4 - Boxiang Lin's WSU school fikes\2020 fall\ee214\ee_214_projects\project_11_2\project_11_2.xpr
+# Log file: C:/Users/boxiang/Desktop/E-File the master/A2 - TwoFiles/A4 - Boxiang Lin's WSU school fikes/2020 fall/ee214/ee_214_projects/project_11_2/vivado.log
+# Journal file: C:/Users/boxiang/Desktop/E-File the master/A2 - TwoFiles/A4 - Boxiang Lin's WSU school fikes/2020 fall/ee214/ee_214_projects/project_11_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/boxiang/Desktop/E-File the master/A2 - TwoFiles/A4 - Boxiang Lin's WSU school fikes/2020 fall/ee214/ee_214_projects/project_11_2/project_11_2.xpr}
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/boxiang/Desktop/E-File the master/A2 - TwoFiles/A4 - Boxiang Lin's WSU school fikes/2020 fall/ee214/ee_214_projects/project_11_2/project_11_2.runs/impl_1/top.bit} [get_hw_devices xc7z007s_1]
+current_hw_device [get_hw_devices xc7z007s_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z007s_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z007s_1]
+set_property PROGRAM.FILE {C:/Users/boxiang/Desktop/E-File the master/A2 - TwoFiles/A4 - Boxiang Lin's WSU school fikes/2020 fall/ee214/ee_214_projects/project_11_2/project_11_2.runs/impl_1/top.bit} [get_hw_devices xc7z007s_1]
+program_hw_devices [get_hw_devices xc7z007s_1]
+refresh_hw_device [lindex [get_hw_devices xc7z007s_1] 0]
